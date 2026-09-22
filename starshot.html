@@ -36,8 +36,8 @@
 <header>
   <p class="eyebrow">Starshot</p>
   <h1><span data-en="Privacy Policy" data-ru="Политика конфиденциальности">Privacy Policy</span></h1>
-  <p class="sub"><span data-en="Last updated: 26 August 2026"
-     data-ru="Последнее обновление: 26 августа 2026 г.">Last updated: 26 August 2026</span></p>
+  <p class="sub"><span data-en="Last updated: 22 September 2026"
+     data-ru="Последнее обновление: 22 сентября 2026 г.">Last updated: 22 September 2026</span></p>
   <nav>
     <button id="btn-en" aria-selected="true" onclick="pick('en')">English</button>
     <button id="btn-ru" aria-selected="false" onclick="pick('ru')">Русский</button>
@@ -50,7 +50,7 @@
   to train anything.</p></div>
 
   <p>This policy explains how the mobile application <strong>Starshot</strong>
-  (<code>ai.starshot.app</code>) handles information. Published on Google Play by an individual
+  (<code>ai.starshot.app</code>) handles information. Published on Google Play and the App Store by an individual
   developer.</p>
 
   <h2>The photo you upload</h2>
@@ -100,20 +100,27 @@
   phone number and not the advertising ID, and it disappears when you uninstall the app.</p>
 
   <h2>Advertising (Google AdMob)</h2>
-  <p>Free generations require watching a short rewarded video. Advertising is supplied by <strong>Google AdMob</strong>. To serve and measure
-  ads, Google may collect the Android advertising ID, IP address (from which an approximate
-  region is derived), device model and operating system version, interactions with the ads
-  shown, and basic diagnostic data such as crash reports and load times.</p>
+  <p>Free generations require watching a short rewarded video. Advertising is supplied by
+  <strong>Google AdMob</strong> on both Android and iOS. To serve and measure ads, Google may
+  collect the device advertising identifier, IP address (from which an approximate region is
+  derived), device model and operating system version, interactions with the ads shown, and
+  basic diagnostic data such as crash reports and load times.</p>
+  <p>The identifier differs by platform. On Android it is the Google advertising ID. On iOS it
+  is the Advertising Identifier (IDFA), and the app asks your permission before any tracking
+  identifier is used: if you decline, ads are still shown but are not personalised.</p>
   <p>Google acts as an independent controller for this processing; we receive only aggregate,
-  non-personal reports. You can reset or delete your advertising ID and switch off ad
-  personalisation in <em>Settings → Google → Ads</em>. Google's own terms apply:
+  non-personal reports. You can reset the identifier and switch off ad personalisation in
+  <em>Settings → Google → Ads</em> on Android, or in <em>Settings → Privacy &amp; Security
+  → Tracking</em> on iOS. Google's own terms apply:
   <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How
   Google uses information from sites or apps that use our services</a>.</p>
 
-  <h2>Purchases (Google Play Billing)</h2>
-  <p>Generation packs are sold through <strong>Google Play</strong>. Card details, billing address and
-  Google account information are handled entirely by Google and never reach us. The app receives
-  only a confirmation that a valid purchase exists.</p>
+  <h2>Purchases</h2>
+  <p>Generation packs are sold through <strong>Google Play</strong> on Android and through the
+  <strong>Apple App Store</strong> on iOS. Card details, billing address and store account
+  information are handled entirely by Google or Apple and never reach us. The app receives only
+  a confirmation that a valid purchase exists, and our server checks that confirmation with the
+  store before packs are credited.</p>
 
   <h2>What we never collect</h2>
   <p>No name, email or phone number. No account or password — there is no sign-up. No location,
@@ -122,12 +129,15 @@
 
   <h2>Permissions</h2>
   <table>
-    <tr><th>Permission</th><th>Why it is needed</th></tr>
-    <tr><td><code>INTERNET</code></td><td>Sending the photo, loading scenes and ads, verifying purchases.</td></tr>
-    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Checking connectivity before a generation.</td></tr>
-    <tr><td><code>AD_ID</code></td><td>Required by Android so AdMob can read the advertising identifier.</td></tr>
-    <tr><td><code>BILLING</code></td><td>In-app purchase of generation packs.</td></tr>
-    <tr><td>Camera / gallery</td><td>Requested by the system only when you pick a photo, and only for that photo.</td></tr>
+    <tr><th>Permission</th><th>Platform</th><th>Why it is needed</th></tr>
+    <tr><td><code>INTERNET</code></td><td>Android</td><td>Sending the photo, loading scenes and ads, verifying purchases.</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Android</td><td>Checking connectivity before a generation.</td></tr>
+    <tr><td><code>AD_ID</code></td><td>Android</td><td>Required by Android so AdMob can read the advertising identifier.</td></tr>
+    <tr><td><code>BILLING</code></td><td>Android</td><td>In-app purchase of generation packs.</td></tr>
+    <tr><td>Camera</td><td>Both</td><td>Requested only when you take a photo inside the app.</td></tr>
+    <tr><td>Photo library</td><td>Both</td><td>Requested only when you pick a photo, and only for that photo.</td></tr>
+    <tr><td>Save to photo library</td><td>iOS</td><td>Saving a finished picture to your own library.</td></tr>
+    <tr><td>Tracking</td><td>iOS</td><td>Asked before the advertising identifier is used. Declining keeps ads non-personalised.</td></tr>
   </table>
 
   <h2>Children</h2>
@@ -153,7 +163,7 @@
   используем ваши фото для обучения моделей.</p></div>
 
   <p>Политика описывает, как приложение <strong>Starshot</strong>
-  (<code>ai.starshot.app</code>) обращается с информацией. Публикуется в Google Play
+  (<code>ai.starshot.app</code>) обращается с информацией. Публикуется в Google Play и App Store
   частным разработчиком.</p>
 
   <h2>Фотография, которую вы загружаете</h2>
@@ -205,20 +215,27 @@
   телефона и не рекламный идентификатор; при удалении приложения строка исчезает.</p>
 
   <h2>Реклама (Google AdMob)</h2>
-  <p>Бесплатная генерация требует просмотра короткого ролика с вознаграждением. Рекламу предоставляет <strong>Google AdMob</strong>. Для показа и измерения
-  рекламы Google может собирать рекламный идентификатор Android, IP-адрес (из него выводится
+  <p>Бесплатная генерация требует просмотра короткого ролика с вознаграждением. Рекламу
+  предоставляет <strong>Google AdMob</strong> и на Android, и на iOS. Для показа и измерения
+  рекламы Google может собирать рекламный идентификатор устройства, IP-адрес (из него выводится
   приблизительный регион), модель устройства и версию операционной системы, взаимодействия
   с показанной рекламой и базовую диагностику — отчёты о сбоях и время загрузки.</p>
+  <p>Идентификатор на платформах разный. На Android это рекламный идентификатор Google.
+  На iOS — Advertising Identifier (IDFA), и приложение спрашивает разрешение, прежде чем
+  обратиться к нему: если отказать, реклама всё равно показывается, но не персонализированная.</p>
   <p>Эту обработку Google ведёт как самостоятельный оператор; мы получаем только обезличенную
-  сводную статистику. Сбросить или удалить рекламный идентификатор и отключить персонализацию
-  можно в <em>Настройки → Google → Реклама</em>. Применяется политика Google:
+  сводную статистику. Сбросить идентификатор и отключить персонализацию можно в
+  <em>Настройки → Google → Реклама</em> на Android или в <em>Настройки → Конфиденциальность
+  и безопасность → Отслеживание</em> на iOS. Применяется политика Google:
   <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Как
   Google использует информацию сайтов и приложений</a>.</p>
 
-  <h2>Покупки (Google Play Billing)</h2>
-  <p>Пакеты генераций продаются через <strong>Google Play</strong>. Данные карты, платёжный адрес
-  и сведения аккаунта Google полностью обрабатывает Google — нам они не передаются.
-  Приложение получает только подтверждение состоявшейся покупки.</p>
+  <h2>Покупки</h2>
+  <p>Пакеты генераций продаются через <strong>Google Play</strong> на Android и через
+  <strong>App Store</strong> на iOS. Данные карты, платёжный адрес и сведения аккаунта магазина
+  полностью обрабатывают Google или Apple — нам они не передаются. Приложение получает только
+  подтверждение состоявшейся покупки, и сервер сверяет это подтверждение с магазином, прежде
+  чем начислить пакет.</p>
 
   <h2>Чего мы не собираем</h2>
   <p>Ни имени, ни почты, ни номера телефона. Ни аккаунта, ни пароля — регистрации нет.
@@ -227,12 +244,15 @@
 
   <h2>Разрешения</h2>
   <table>
-    <tr><th>Разрешение</th><th>Зачем нужно</th></tr>
-    <tr><td><code>INTERNET</code></td><td>Отправка фото, загрузка сцен и рекламы, проверка покупок.</td></tr>
-    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Проверка соединения перед генерацией.</td></tr>
-    <tr><td><code>AD_ID</code></td><td>Требуется Android, чтобы AdMob мог обратиться к рекламному идентификатору.</td></tr>
-    <tr><td><code>BILLING</code></td><td>Покупка пакетов генераций.</td></tr>
-    <tr><td>Камера / галерея</td><td>Запрашивается системой только в момент выбора фото и только для него.</td></tr>
+    <tr><th>Разрешение</th><th>Платформа</th><th>Зачем нужно</th></tr>
+    <tr><td><code>INTERNET</code></td><td>Android</td><td>Отправка фото, загрузка сцен и рекламы, проверка покупок.</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Android</td><td>Проверка соединения перед генерацией.</td></tr>
+    <tr><td><code>AD_ID</code></td><td>Android</td><td>Требуется Android, чтобы AdMob мог обратиться к рекламному идентификатору.</td></tr>
+    <tr><td><code>BILLING</code></td><td>Android</td><td>Покупка пакетов генераций.</td></tr>
+    <tr><td>Камера</td><td>Обе</td><td>Запрашивается только в момент съёмки внутри приложения.</td></tr>
+    <tr><td>Галерея</td><td>Обе</td><td>Запрашивается только в момент выбора фото и только для него.</td></tr>
+    <tr><td>Сохранение в галерею</td><td>iOS</td><td>Сохранение готового снимка в вашу галерею.</td></tr>
+    <tr><td>Отслеживание</td><td>iOS</td><td>Спрашивается перед обращением к рекламному идентификатору. Отказ оставляет рекламу неперсонализированной.</td></tr>
   </table>
 
   <h2>Дети</h2>

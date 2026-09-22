@@ -36,8 +36,8 @@
 <header>
   <p class="eyebrow">ProShot</p>
   <h1><span data-en="Privacy Policy" data-ru="Политика конфиденциальности">Privacy Policy</span></h1>
-  <p class="sub"><span data-en="Last updated: 26 August 2026"
-     data-ru="Последнее обновление: 26 августа 2026 г.">Last updated: 26 August 2026</span></p>
+  <p class="sub"><span data-en="Last updated: 22 September 2026"
+     data-ru="Последнее обновление: 22 сентября 2026 г.">Last updated: 22 September 2026</span></p>
   <nav>
     <button id="btn-en" aria-selected="true" onclick="pick('en')">English</button>
     <button id="btn-ru" aria-selected="false" onclick="pick('ru')">Русский</button>
@@ -49,12 +49,16 @@
   no email, and your photo never trains anything.</p></div>
 
   <p>This policy explains how the mobile application <strong>ProShot</strong>
-  (<code>ai.proshot.app</code>) handles information. Published on Google Play by an individual
+  (<code>ai.proshot.app</code>) handles information. Published on Google Play and the App Store by an individual
   developer. The app contains <strong>no advertising</strong>.</p>
 
   <h2>The photo you upload</h2>
   <ul>
-    <li>You pick one photo yourself. The app never reads your gallery on its own.</li>
+    <li>On iOS you photograph yourself inside the app, in three guided angles; on Android you
+    pick a photo yourself. Either way the app never reads your gallery on its own.</li>
+    <li>Before the shutter opens, the frame is checked <strong>on your device</strong> — one
+    face, large enough, centred, level, well lit and sharp. That check runs entirely on the
+    phone: rejected frames are never sent anywhere and are not stored.</li>
     <li>It is sent over an encrypted HTTPS connection to our server and from there to the AI
     image generation service that produces your headshots.</li>
     <li>It is used <strong>only</strong> to produce the images you ordered: not to train AI
@@ -97,16 +101,18 @@
   and how many photos remain. Not your Google account, not your phone number, not an advertising
   ID; it disappears when you uninstall the app.</p>
 
-  <h2>Purchases (Google Play Billing)</h2>
-  <p>Photo packs are sold through <strong>Google Play</strong>. Card details, billing address and
-  Google account information are handled entirely by Google and never reach us. The app receives
-  only a confirmation that a valid purchase exists.</p>
+  <h2>Purchases</h2>
+  <p>Photo packs are sold through <strong>Google Play</strong> on Android and through the
+  <strong>Apple App Store</strong> on iOS. Card details, billing address and store account
+  information are handled entirely by Google or Apple and never reach us. The app receives only
+  a confirmation that a valid purchase exists.</p>
 
-  <p>Purchase tokens are verified server-side with the Google Play Developer API before photos
-  are credited. We see no payment details at any point.</p>
+  <p>That confirmation is verified server-side — with the Google Play Developer API on Android,
+  and with Apple's signed transaction on iOS — before photos are credited. We see no payment
+  details at any point.</p>
 
   <h2>Advertising</h2>
-  <p>The app shows no advertising and contains no advertising SDK.</p>
+  <p>The app shows no advertising and contains no advertising SDK, on either platform.</p>
 
   <h2>What we never collect</h2>
   <p>No name, email or phone number. No account or password. No location, contacts, calendar,
@@ -114,10 +120,12 @@
 
   <h2>Permissions</h2>
   <table>
-    <tr><th>Permission</th><th>Why it is needed</th></tr>
-    <tr><td><code>INTERNET</code></td><td>Sending the photo, loading scenes, verifying purchases.</td></tr>
-    <tr><td><code>BILLING</code></td><td>In-app purchase of photo packs.</td></tr>
-    <tr><td>Gallery</td><td>Requested by the system only when you pick a photo, and only for that photo.</td></tr>
+    <tr><th>Permission</th><th>Platform</th><th>Why it is needed</th></tr>
+    <tr><td><code>INTERNET</code></td><td>Android</td><td>Sending the photo, loading scenes, verifying purchases.</td></tr>
+    <tr><td><code>BILLING</code></td><td>Android</td><td>In-app purchase of photo packs.</td></tr>
+    <tr><td>Camera</td><td>Both</td><td>Taking your portrait inside the app. Never used in the background.</td></tr>
+    <tr><td>Photo library</td><td>Both</td><td>Requested only when you pick a photo, and only for that photo.</td></tr>
+    <tr><td>Save to photo library</td><td>iOS</td><td>Saving a finished portrait to your own library.</td></tr>
   </table>
 
   <h2>Children</h2>
@@ -147,7 +155,11 @@
 
   <h2>Фотография, которую вы загружаете</h2>
   <ul>
-    <li>Одно фото вы выбираете сами. Приложение не читает галерею самостоятельно.</li>
+    <li>На iOS вы снимаете себя прямо в приложении, в трёх ракурсах с подсказками; на Android
+    выбираете фото сами. В обоих случаях приложение не читает галерею самостоятельно.</li>
+    <li>До того как откроется затвор, кадр проверяется <strong>на вашем устройстве</strong> —
+    одно лицо, достаточно крупно, по центру, без наклона, освещено и не смазано. Эта проверка
+    целиком выполняется на телефоне: отклонённые кадры никуда не отправляются и не хранятся.</li>
     <li>Оно передаётся по зашифрованному соединению HTTPS на наш сервер, а оттуда — в сервис
     генерации изображений.</li>
     <li>Используется <strong>только</strong> для создания заказанных портретов: не для обучения
@@ -191,16 +203,18 @@
   и остаток фотографий. Это не аккаунт Google, не номер телефона и не рекламный идентификатор;
   при удалении приложения она исчезает.</p>
 
-  <h2>Покупки (Google Play Billing)</h2>
-  <p>Пакеты фотографий продаются через <strong>Google Play</strong>. Данные карты, платёжный адрес
-  и сведения аккаунта Google полностью обрабатывает Google — нам они не передаются.
-  Приложение получает только подтверждение состоявшейся покупки.</p>
+  <h2>Покупки</h2>
+  <p>Пакеты фотографий продаются через <strong>Google Play</strong> на Android и через
+  <strong>App Store</strong> на iOS. Данные карты, платёжный адрес и сведения аккаунта магазина
+  полностью обрабатывают Google или Apple — нам они не передаются. Приложение получает только
+  подтверждение состоявшейся покупки.</p>
 
-  <p>Токен покупки проверяется на сервере через Google Play Developer API, и только после этого
-  начисляются фотографии. Платёжные данные нам не видны ни на одном этапе.</p>
+  <p>Это подтверждение проверяется на сервере — через Google Play Developer API на Android
+  и через подписанную транзакцию Apple на iOS — и только после этого начисляются фотографии.
+  Платёжные данные нам не видны ни на одном этапе.</p>
 
   <h2>Реклама</h2>
-  <p>Приложение не показывает рекламу и не содержит рекламных библиотек.</p>
+  <p>Приложение не показывает рекламу и не содержит рекламных библиотек ни на одной из платформ.</p>
 
   <h2>Чего мы не собираем</h2>
   <p>Ни имени, ни почты, ни номера телефона. Ни аккаунта, ни пароля. Ни местоположения,
@@ -208,10 +222,12 @@
 
   <h2>Разрешения</h2>
   <table>
-    <tr><th>Разрешение</th><th>Зачем нужно</th></tr>
-    <tr><td><code>INTERNET</code></td><td>Отправка фото, загрузка сцен, проверка покупок.</td></tr>
-    <tr><td><code>BILLING</code></td><td>Покупка пакетов фотографий.</td></tr>
-    <tr><td>Галерея</td><td>Запрашивается системой только в момент выбора фото и только для него.</td></tr>
+    <tr><th>Разрешение</th><th>Платформа</th><th>Зачем нужно</th></tr>
+    <tr><td><code>INTERNET</code></td><td>Android</td><td>Отправка фото, загрузка сцен, проверка покупок.</td></tr>
+    <tr><td><code>BILLING</code></td><td>Android</td><td>Покупка пакетов фотографий.</td></tr>
+    <tr><td>Камера</td><td>Обе</td><td>Съёмка портрета внутри приложения. В фоне не используется никогда.</td></tr>
+    <tr><td>Галерея</td><td>Обе</td><td>Запрашивается только в момент выбора фото и только для него.</td></tr>
+    <tr><td>Сохранение в галерею</td><td>iOS</td><td>Сохранение готового портрета в вашу галерею.</td></tr>
   </table>
 
   <h2>Дети</h2>
