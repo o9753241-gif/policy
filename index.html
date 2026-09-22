@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policies</title>
+<style>
+  :root{--ink:#0E0F14;--deep:#08090E;--panel:#171922;--accent:#7C8CF8;
+        --dim:#2A2E3E;--paper:#E6E8F0;--muted:#8E93A8}
+  *{box-sizing:border-box}
+  body{margin:0;padding:0 20px 64px;background:var(--ink);color:var(--paper);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:760px;margin:0 auto}
+  header{padding:48px 0 24px;border-bottom:1px solid var(--dim);margin-bottom:32px}
+  .eyebrow{color:var(--accent);font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 12px}
+  h1{margin:0 0 8px;font-size:30px;line-height:1.2;font-weight:600}
+  .sub{color:var(--muted);margin:0;font-size:14px}
+  nav.lang{margin:24px 0 0;display:flex;gap:8px;flex-wrap:wrap}
+  nav.lang button{background:transparent;color:var(--muted);border:1px solid var(--dim);
+    border-radius:8px;padding:8px 16px;font-size:14px;cursor:pointer;font-family:inherit}
+  nav.lang button[aria-selected="true"]{background:var(--panel);color:var(--accent);border-color:var(--accent)}
+  ul.apps{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+  ul.apps a{display:block;background:var(--deep);border:1px solid var(--dim);border-radius:12px;
+    padding:18px 20px;text-decoration:none;color:var(--paper)}
+  ul.apps a:hover{border-color:var(--accent)}
+  ul.apps strong{display:block;font-size:18px;color:var(--accent);font-weight:600;margin-bottom:4px}
+  ul.apps span{font-size:14px;color:var(--muted)}
+  footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--dim);color:var(--muted);font-size:14px}
+  footer a{color:var(--accent)}
+</style>
+</head>
+<body><div class="wrap">
+<header>
+  <p class="eyebrow">Aleksandrs Rassudovskis</p>
+  <h1><span data-en="Privacy Policies" data-ru="Политики конфиденциальности">Privacy Policies</span></h1>
+  <p class="sub"><span data-en="Last updated: 26 August 2026"
+     data-ru="Последнее обновление: 26 августа 2026 г.">Last updated: 26 August 2026</span></p>
+  <nav class="lang">
+    <button id="btn-en" aria-selected="true" onclick="pick('en')">English</button>
+    <button id="btn-ru" aria-selected="false" onclick="pick('ru')">Русский</button>
+  </nav>
+</header>
+
+<ul class="apps">
+  <li><a href="starshot.html">
+    <strong>Starshot</strong>
+    <span data-en="AI portraits in cinematic scenes" data-ru="ИИ-портреты в кинематографичных сценах">AI portraits in cinematic scenes</span>
+  </a></li>
+  <li><a href="proshot.html">
+    <strong>ProShot</strong>
+    <span data-en="Professional headshots for work profiles" data-ru="Деловые портреты для рабочих профилей">Professional headshots for work profiles</span>
+  </a></li>
+  <li><a href="nourish.html">
+    <strong>Nemi AI</strong>
+    <span data-en="Food recognition from a photo" data-ru="Распознавание еды по фотографии">Food recognition from a photo</span>
+  </a></li>
+</ul>
+
+<footer>
+  <p><span data-en="Questions:" data-ru="Вопросы:">Questions:</span>
+     <a href="mailto:o9753241@gmail.com">o9753241@gmail.com</a></p>
+</footer>
+</div>
+
+<script>
+  function pick(lang){
+    document.documentElement.lang = lang;
+    document.getElementById('btn-en').setAttribute('aria-selected', lang === 'en');
+    document.getElementById('btn-ru').setAttribute('aria-selected', lang === 'ru');
+    document.querySelectorAll('[data-en]').forEach(function(el){
+      el.textContent = el.getAttribute('data-' + lang);
+    });
+  }
+</script>
+</body>
+</html>

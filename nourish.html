@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Nemi AI</title>
+<style>
+  :root{--ink:#0A0F0C;--deep:#060A08;--panel:#121A15;--accent:#4CAF7D;
+        --dim:#25352B;--paper:#E8E2D0;--muted:#8E90A8}
+  *{box-sizing:border-box}
+  body{margin:0;padding:0 20px 64px;background:var(--ink);color:var(--paper);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:760px;margin:0 auto}
+  header{padding:48px 0 24px;border-bottom:1px solid var(--dim);margin-bottom:32px}
+  .eyebrow{color:var(--accent);font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 12px}
+  h1{margin:0 0 8px;font-size:30px;line-height:1.2;font-weight:600}
+  .sub{color:var(--muted);margin:0;font-size:14px}
+  nav{margin:24px 0 0;display:flex;gap:8px;flex-wrap:wrap}
+  nav button{background:transparent;color:var(--muted);border:1px solid var(--dim);
+    border-radius:8px;padding:8px 16px;font-size:14px;cursor:pointer;font-family:inherit}
+  nav button[aria-selected="true"]{background:var(--panel);color:var(--accent);border-color:var(--accent)}
+  h2{font-size:19px;margin:36px 0 10px;color:var(--accent);font-weight:600}
+  ul{padding-left:20px} li{margin-bottom:8px}
+  a{color:var(--accent)}
+  code{background:var(--panel);padding:1px 6px;border-radius:5px;font-size:13.5px}
+  .box{background:var(--deep);border:1px solid var(--dim);border-radius:12px;padding:18px 20px;margin:24px 0}
+  .box p{margin:0;font-size:15px}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--dim);vertical-align:top}
+  th{color:var(--accent);font-weight:600;white-space:nowrap}
+  footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--dim);color:var(--muted);font-size:14px}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body><div class="wrap">
+<header>
+  <p class="eyebrow">Nemi AI</p>
+  <h1><span data-en="Privacy Policy" data-ru="Политика конфиденциальности">Privacy Policy</span></h1>
+  <p class="sub"><span data-en="Last updated: 26 August 2026"
+     data-ru="Последнее обновление: 26 августа 2026 г.">Last updated: 26 August 2026</span></p>
+  <nav>
+    <button id="btn-en" aria-selected="true" onclick="pick('en')">English</button>
+    <button id="btn-ru" aria-selected="false" onclick="pick('ru')">Русский</button>
+  </nav>
+</header>
+<section id="lang-en">
+  <div class="box"><p><strong>The short version:</strong> your food diary stays on your phone.
+  The only thing that leaves the device is a food photo you choose to scan, and the name you
+  type into food search. No account, no name, no email.</p></div>
+
+  <p>This policy explains how the mobile application <strong>Nemi AI</strong>
+  (<code>ru.nemiai.app</code>) handles information. Published on Google Play by an individual
+  developer.</p>
+
+  <h2>What stays on your device</h2>
+  <p>Your diary is local. It is stored in the private storage Android assigns to the app, is not
+  readable by other apps, is not uploaded anywhere, and is deleted when you uninstall:</p>
+  <ul>
+    <li>meals, portions, calories and macros you log;</li>
+    <li>weight history and water intake;</li>
+    <li>profile data you enter — height, weight, age, activity level, goals;</li>
+    <li>the daily streak counter and interface preferences.</li>
+  </ul>
+  <p>We operate no user accounts and keep no copy of your diary on any server.</p>
+
+  <h2>Food photos</h2>
+  <ul>
+    <li>You choose when to scan. The app never reads your gallery on its own.</li>
+    <li>The photo is sent over an encrypted HTTPS connection to our server and from there to an
+    AI vision service, which returns the recognised dishes and their nutrition estimate.</li>
+    <li>It is used <strong>only</strong> for that one recognition: not to train AI models, not
+    published, not shown to others, not sold or shared for advertising.</li>
+    <li>The photo is deleted from our server after recognition.</li>
+    <li>Photograph food, not people. If a person appears in the frame, we neither recognise nor
+    store their face — but the simplest protection is not to include them.</li>
+  </ul>
+
+  <h2>Food search</h2>
+  <p>When you search for a food by name, the search term is sent to our server, which queries a
+  nutrition database on your behalf over an encrypted connection. Search terms are not linked to
+  any identity and are not stored as a profile.</p>
+
+  <h2>Advertising (Google AdMob)</h2>
+  <p>The free version shows banners and one full-screen ad before photo recognition. Advertising is supplied by <strong>Google AdMob</strong>. To serve and measure
+  ads, Google may collect the Android advertising ID, IP address (from which an approximate
+  region is derived), device model and operating system version, interactions with the ads
+  shown, and basic diagnostic data such as crash reports and load times.</p>
+  <p>Google acts as an independent controller for this processing; we receive only aggregate,
+  non-personal reports. You can reset or delete your advertising ID and switch off ad
+  personalisation in <em>Settings → Google → Ads</em>. Google's own terms apply:
+  <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How
+  Google uses information from sites or apps that use our services</a>.</p>
+
+  <h2>Purchases (Google Play Billing)</h2>
+  <p>Premium subscriptions are sold through <strong>Google Play</strong>. Card details, billing address and
+  Google account information are handled entirely by Google and never reach us. The app receives
+  only a confirmation that a valid purchase exists.</p>
+
+  <p>Premium removes advertising and speeds up recognition. It gates none of the tracking
+  features — the diary, statistics, water and weight tracking are free.</p>
+
+  <h2>Permissions</h2>
+  <table>
+    <tr><th>Permission</th><th>Why it is needed</th></tr>
+    <tr><td><code>INTERNET</code></td><td>Photo recognition, food search, ads, purchases.</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Checking connectivity before a request.</td></tr>
+    <tr><td><code>AD_ID</code></td><td>Required by Android so AdMob can read the advertising identifier.</td></tr>
+    <tr><td><code>BILLING</code></td><td>Premium subscription.</td></tr>
+    <tr><td>Camera / gallery</td><td>Requested by the system only when you take or pick a photo.</td></tr>
+  </table>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children under 13 and we do not knowingly process their data.</p>
+
+  <h2>Your rights</h2>
+  <p>We hold no account and no server copy of your data, so there is nothing to export or erase
+  on request. Clearing the app's storage or uninstalling it removes everything permanently.</p>
+
+  <h2>Not medical advice</h2>
+  <p>Calorie and macro figures are <strong>estimates</strong> produced automatically from a photo
+  or a database entry, and they can be wrong. The app is a tracking tool for general wellbeing,
+  not a medical device. It does not diagnose, treat or prevent any condition. Consult a doctor or
+  a registered dietitian before making decisions about your diet, especially if you have a
+  medical condition, are pregnant, or are recovering from an eating disorder.</p>
+
+  <h2>Changes and contact</h2>
+  <p>Updates are published at this address with a new date. Questions:
+  <a href="mailto:o9753241@gmail.com">o9753241@gmail.com</a>.</p>
+</section>
+<section id="lang-ru" hidden>
+  <div class="box"><p><strong>Коротко:</strong> дневник питания остаётся на вашем телефоне.
+  Устройство покидают только фото еды, которое вы отправили на распознавание, и название,
+  которое вы вводите в поиск продуктов. Ни аккаунта, ни имени, ни почты.</p></div>
+
+  <p>Политика описывает, как приложение <strong>Nemi AI</strong> (<code>ru.nemiai.app</code>)
+  обращается с информацией. Публикуется в Google Play частным разработчиком.</p>
+
+  <h2>Что остаётся на устройстве</h2>
+  <p>Дневник хранится локально — в приватной области, которую Android выделяет приложению.
+  Он недоступен другим приложениям, никуда не выгружается и удаляется вместе с приложением:</p>
+  <ul>
+    <li>приёмы пищи, порции, калории и БЖУ, которые вы записали;</li>
+    <li>история веса и потребления воды;</li>
+    <li>данные профиля — рост, вес, возраст, уровень активности, цели;</li>
+    <li>счётчик дней подряд и настройки интерфейса.</li>
+  </ul>
+  <p>Аккаунтов у нас нет, копии вашего дневника на серверах не хранится.</p>
+
+  <h2>Фотографии еды</h2>
+  <ul>
+    <li>Когда распознавать — решаете вы. Приложение не читает галерею самостоятельно.</li>
+    <li>Фото передаётся по зашифрованному соединению HTTPS на наш сервер, а оттуда — в сервис
+    распознавания, который возвращает блюда и оценку их питательности.</li>
+    <li>Используется <strong>только</strong> для этого одного распознавания: не для обучения
+    моделей, не публикуется, не показывается другим, не продаётся и не передаётся для рекламы.</li>
+    <li>После распознавания фото удаляется с сервера.</li>
+    <li>Фотографируйте еду, а не людей. Если человек попал в кадр, его лицо мы не распознаём
+    и не сохраняем, но проще всего его в кадр не включать.</li>
+  </ul>
+
+  <h2>Поиск продуктов</h2>
+  <p>Когда вы ищете продукт по названию, запрос уходит на наш сервер, который обращается
+  к базе данных о питании по зашифрованному соединению. Поисковые запросы ни с кем
+  не связываются и не накапливаются в профиль.</p>
+
+  <h2>Реклама (Google AdMob)</h2>
+  <p>В бесплатной версии показываются баннеры и одно полноэкранное объявление перед распознаванием фото. Рекламу предоставляет <strong>Google AdMob</strong>. Для показа и измерения
+  рекламы Google может собирать рекламный идентификатор Android, IP-адрес (из него выводится
+  приблизительный регион), модель устройства и версию операционной системы, взаимодействия
+  с показанной рекламой и базовую диагностику — отчёты о сбоях и время загрузки.</p>
+  <p>Эту обработку Google ведёт как самостоятельный оператор; мы получаем только обезличенную
+  сводную статистику. Сбросить или удалить рекламный идентификатор и отключить персонализацию
+  можно в <em>Настройки → Google → Реклама</em>. Применяется политика Google:
+  <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Как
+  Google использует информацию сайтов и приложений</a>.</p>
+
+  <h2>Покупки (Google Play Billing)</h2>
+  <p>Подписки Premium продаются через <strong>Google Play</strong>. Данные карты, платёжный адрес
+  и сведения аккаунта Google полностью обрабатывает Google — нам они не передаются.
+  Приложение получает только подтверждение состоявшейся покупки.</p>
+
+  <p>Premium убирает рекламу и ускоряет распознавание. Он не закрывает ни одной функции учёта:
+  дневник, статистика, вода и вес бесплатны.</p>
+
+  <h2>Разрешения</h2>
+  <table>
+    <tr><th>Разрешение</th><th>Зачем нужно</th></tr>
+    <tr><td><code>INTERNET</code></td><td>Распознавание фото, поиск продуктов, реклама, покупки.</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Проверка соединения перед запросом.</td></tr>
+    <tr><td><code>AD_ID</code></td><td>Требуется Android, чтобы AdMob мог обратиться к рекламному идентификатору.</td></tr>
+    <tr><td><code>BILLING</code></td><td>Подписка Premium.</td></tr>
+    <tr><td>Камера / галерея</td><td>Запрашивается системой только в момент съёмки или выбора фото.</td></tr>
+  </table>
+
+  <h2>Дети</h2>
+  <p>Приложение не адресовано детям младше 13 лет, и мы сознательно не обрабатываем
+  относящиеся к ним данные.</p>
+
+  <h2>Ваши права</h2>
+  <p>Аккаунта и серверной копии ваших данных у нас нет, выгружать и удалять по запросу нечего.
+  Очистка хранилища приложения или его удаление стирает всё безвозвратно.</p>
+
+  <h2>Это не медицинская рекомендация</h2>
+  <p>Калории и БЖУ — <strong>оценка</strong>, полученная автоматически по фотографии или из базы
+  данных, и она может быть неточной. Приложение помогает вести учёт, но не является медицинским
+  изделием: оно ничего не диагностирует, не лечит и не предотвращает. Прежде чем менять рацион,
+  посоветуйтесь с врачом или дипломированным диетологом — особенно при наличии заболеваний,
+  во время беременности и при восстановлении после расстройства пищевого поведения.</p>
+
+  <h2>Изменения и контакты</h2>
+  <p>Обновления публикуются по этому адресу с новой датой. Вопросы:
+  <a href="mailto:o9753241@gmail.com">o9753241@gmail.com</a>.</p>
+</section>
+<footer><p>Nemi AI · ru.nemiai.app · <a href="mailto:o9753241@gmail.com">o9753241@gmail.com</a></p></footer>
+</div>
+<script>
+function pick(lang){
+  ['en','ru'].forEach(function(l){
+    document.getElementById('lang-'+l).hidden = (l !== lang);
+    document.getElementById('btn-'+l).setAttribute('aria-selected', l === lang);
+  });
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    el.textContent = el.getAttribute('data-'+lang);
+  });
+}
+// Всегда открываем на английском: политика — юридический документ, и одна
+// версия должна быть «основной». Русский доступен кнопкой вверху.
+</script>
+</body></html>
