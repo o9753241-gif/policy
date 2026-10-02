@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Starshot</title>
+<style>
+  :root{--ink:#0E0B14;--deep:#080610;--panel:#1B1526;--accent:#C9A24E;
+        --dim:#4A4326;--paper:#E8E2D0;--muted:#8E90A8}
+  *{box-sizing:border-box}
+  body{margin:0;padding:0 20px 64px;background:var(--ink);color:var(--paper);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:760px;margin:0 auto}
+  header{padding:48px 0 24px;border-bottom:1px solid var(--dim);margin-bottom:32px}
+  .eyebrow{color:var(--accent);font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 12px}
+  h1{margin:0 0 8px;font-size:30px;line-height:1.2;font-weight:600}
+  .sub{color:var(--muted);margin:0;font-size:14px}
+  nav{margin:24px 0 0;display:flex;gap:8px;flex-wrap:wrap}
+  nav button{background:transparent;color:var(--muted);border:1px solid var(--dim);
+    border-radius:8px;padding:8px 16px;font-size:14px;cursor:pointer;font-family:inherit}
+  nav button[aria-selected="true"]{background:var(--panel);color:var(--accent);border-color:var(--accent)}
+  h2{font-size:19px;margin:36px 0 10px;color:var(--accent);font-weight:600}
+  ul{padding-left:20px} li{margin-bottom:8px}
+  a{color:var(--accent)}
+  code{background:var(--panel);padding:1px 6px;border-radius:5px;font-size:13.5px}
+  .box{background:var(--deep);border:1px solid var(--dim);border-radius:12px;padding:18px 20px;margin:24px 0}
+  .box p{margin:0;font-size:15px}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--dim);vertical-align:top}
+  th{color:var(--accent);font-weight:600;white-space:nowrap}
+  footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--dim);color:var(--muted);font-size:14px}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body><div class="wrap">
+<header>
+  <p class="eyebrow">Starshot</p>
+  <h1><span data-en="Support" data-ru="Поддержка">Support</span></h1>
+  <p class="sub"><span data-en="Questions, problems, refunds"
+     data-ru="Вопросы, неполадки, возврат денег">Questions, problems, refunds</span></p>
+  <nav>
+    <button id="btn-en" aria-selected="true" onclick="pick('en')">English</button>
+    <button id="btn-ru" aria-selected="false" onclick="pick('ru')">Русский</button>
+  </nav>
+</header>
+<section id="lang-en">
+  <div class="box"><p><strong>Write to us at
+  <a href="mailto:o9753241@gmail.com">o9753241@gmail.com</a>.</strong> One person reads that
+  mailbox, usually within a day. Writing in English or Russian is equally fine.</p></div>
+
+  <p>Starshot turns a photo you already have into a cinematic portrait inside one of more than
+  300 scenes. Everything below answers the questions people actually ask.</p>
+
+  <h2>The generation failed and I got my photo back</h2>
+  <p>It happens when the image service refuses a request. The generation is returned to your
+  balance automatically — a free one goes back to free, a pack one back to the pack — so nothing
+  is lost. Try again, and if it repeats with the same scene, write to us and name the scene and
+  the approximate time.</p>
+
+  <h2>How often is the free generation?</h2>
+  <p>One every seven days. The period is counted by our server, not by your phone, so changing
+  the clock on the device will not bring it forward. A short rewarded video plays before a free
+  generation; if you close it halfway, the generation does not start and nothing is spent.</p>
+
+  <h2>I bought a pack and the generations did not appear</h2>
+  <p>First, reopen the app. A purchase is completed only after our server has added the
+  generations, so a purchase that was interrupted is finished on the next launch by itself.
+  If the balance is still unchanged, write to us with the date and the amount. We do not need —
+  and must never be sent — your card details: Apple handles payment, and the receipt it issues
+  is enough for us to find the purchase.</p>
+
+  <h2>How do I get the 2:3 and 9:16 formats?</h2>
+  <p>They open once you buy any pack, and they stay open afterwards, including when the pack has
+  been used up. The square 1:1 format is available to everyone.</p>
+
+  <h2>The portrait does not look like me</h2>
+  <p>Full-body scenes need a full-body photo: if the source shows you from the waist up, the
+  legs and the pose are invented. Height and weight are optional, and they mainly help the
+  proportions in full-body scenes. A sharp, well-lit photo with the face clearly visible gives
+  the best result.</p>
+
+  <h2>What happens to my photo?</h2>
+  <p>It is sent over an encrypted connection, used for that one generation, and deleted from our
+  server afterwards. It is never used to train anything and never shown to anyone else. The
+  details are in the <a href="starshot.html">privacy policy</a>.</p>
+
+  <h2>How do I delete my data?</h2>
+  <p>There is nothing to delete by hand: the app has no accounts, and the only thing stored is a
+  device identifier with your generation count. Uninstalling the app removes it.</p>
+
+  <h2>Refunds</h2>
+  <p>Purchases in the App Store are refunded by Apple, not by us — use
+  <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. If the reason is that
+  something in the app did not work, write to us as well, so the fault gets fixed.</p>
+
+  <h2>Reporting a problem</h2>
+  <p>The more precise, the faster it gets fixed: what you did, what you expected, what happened
+  instead, the scene name and the time. A screenshot helps.</p>
+</section>
+<section id="lang-ru" hidden>
+  <div class="box"><p><strong>Пишите на
+  <a href="mailto:o9753241@gmail.com">o9753241@gmail.com</a>.</strong> Почту читает один
+  человек, обычно в течение суток. По-русски и по-английски одинаково хорошо.</p></div>
+
+  <p>Starshot превращает обычный снимок в кинематографичный портрет в одной из более чем 300
+  сцен. Ниже — ответы на вопросы, которые задают на самом деле.</p>
+
+  <h2>Генерация не прошла, вернулось исходное фото</h2>
+  <p>Так бывает, когда сервис изображений отказывает в запросе. Генерация возвращается на счёт
+  автоматически: бесплатная — в бесплатные, из пакета — в пакет, так что ничего не теряется.
+  Попробуйте ещё раз, а если повторяется на той же сцене — напишите нам, укажите название сцены
+  и примерное время.</p>
+
+  <h2>Как часто даётся бесплатная генерация?</h2>
+  <p>Одна раз в семь дней. Период считает наш сервер, а не телефон, поэтому перевод часов на
+  устройстве её не приблизит. Перед бесплатной генерацией показывается короткий ролик; если
+  закрыть его на середине, генерация не начнётся и ничего не спишется.</p>
+
+  <h2>Купил пакет, а генерации не появились</h2>
+  <p>Сначала откройте приложение заново. Покупка считается завершённой только после того, как
+  наш сервер начислил генерации, поэтому прерванная покупка доводится до конца при следующем
+  запуске сама. Если счёт всё равно не изменился — напишите нам, укажите дату и сумму. Данные
+  карты нам не нужны и присылать их не надо: оплату проводит Apple, и выданного ею чека
+  достаточно, чтобы найти покупку.</p>
+
+  <h2>Как открыть форматы 2:3 и 9:16?</h2>
+  <p>Они открываются покупкой любого пакета и остаются открытыми потом, в том числе когда пакет
+  израсходован. Квадратный формат 1:1 доступен всем.</p>
+
+  <h2>Портрет не похож на меня</h2>
+  <p>Сценам в полный рост нужен снимок в полный рост: если на исходнике вы по пояс, ноги и поза
+  додумываются. Рост и вес указывать необязательно, они помогают прежде всего пропорциям в
+  таких сценах. Лучший результат даёт резкое, хорошо освещённое фото с ясно видимым лицом.</p>
+
+  <h2>Что происходит с моей фотографией?</h2>
+  <p>Она уходит по зашифрованному соединению, используется для одной этой генерации и после
+  удаляется с нашего сервера. Её не используют для обучения и никому не показывают. Подробности
+  — в <a href="starshot.html">политике конфиденциальности</a>.</p>
+
+  <h2>Как удалить свои данные?</h2>
+  <p>Удалять руками нечего: аккаунтов в приложении нет, хранится только идентификатор устройства
+  со счётчиком генераций. Удаление приложения стирает и его.</p>
+
+  <h2>Возврат денег</h2>
+  <p>Покупки в App Store возвращает Apple, а не мы — через
+  <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Если причина в том,
+  что что-то не сработало в приложении, напишите и нам тоже, чтобы неисправность починили.</p>
+
+  <h2>Как сообщить о проблеме</h2>
+  <p>Чем точнее, тем быстрее починим: что делали, чего ждали, что получилось вместо этого,
+  название сцены и время. Снимок экрана помогает.</p>
+</section>
+<footer>
+  <p><span data-en="Starshot · ai.starshot.app · "
+     data-ru="Starshot · ai.starshot.app · ">Starshot · ai.starshot.app · </span><a
+     href="mailto:o9753241@gmail.com">o9753241@gmail.com</a></p>
+</footer>
+</div>
+<script>
+function pick(lang){
+  ['en','ru'].forEach(function(l){
+    document.getElementById('lang-'+l).hidden = (l !== lang);
+    document.getElementById('btn-'+l).setAttribute('aria-selected', l === lang);
+  });
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    el.textContent = el.getAttribute('data-'+lang);
+  });
+}
+// Всегда открываем на английском: политика — юридический документ, и одна
+// версия должна быть «основной». Русский доступен кнопкой вверху.
+</script>
+</body>
+</html>

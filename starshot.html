@@ -36,8 +36,8 @@
 <header>
   <p class="eyebrow">Starshot</p>
   <h1><span data-en="Privacy Policy" data-ru="Политика конфиденциальности">Privacy Policy</span></h1>
-  <p class="sub"><span data-en="Last updated: 22 September 2026"
-     data-ru="Последнее обновление: 22 сентября 2026 г.">Last updated: 22 September 2026</span></p>
+  <p class="sub"><span data-en="Last updated: 2 October 2026"
+     data-ru="Последнее обновление: 2 октября 2026 г.">Last updated: 2 October 2026</span></p>
   <nav>
     <button id="btn-en" aria-selected="true" onclick="pick('en')">English</button>
     <button id="btn-ru" aria-selected="false" onclick="pick('ru')">Русский</button>
@@ -98,6 +98,15 @@
   <p>A random string created on first launch and stored on your device. It lets the server count
   your free generation and remember packs you purchased. It is not your Google account, not your
   phone number and not the advertising ID, and it disappears when you uninstall the app.</p>
+
+  <h2>App integrity check (Apple App Attest)</h2>
+  <p>On iOS the app proves to our server that it is a genuine copy running on a genuine Apple
+  device. Once per installation it creates a key inside the secure hardware of the device and
+  asks Apple to certify it. The certificate is sent to our server, checked there, and exchanged
+  for a signed token that later requests carry. This is what stops free generations from being
+  claimed by scripts pretending to be the app. The certificate carries no name, no account and
+  no advertising identifier; the key itself never leaves your device, and Apple does not learn
+  what you do in the app. On Android the same job is done by Google Play Integrity.</p>
 
   <h2>Advertising (Google AdMob)</h2>
   <p>Free generations require watching a short rewarded video. Advertising is supplied by
@@ -213,6 +222,15 @@
   <p>Случайная строка, создаваемая при первом запуске и хранящаяся на устройстве. По ней сервер
   учитывает бесплатную генерацию и помнит купленные пакеты. Это не аккаунт Google, не номер
   телефона и не рекламный идентификатор; при удалении приложения строка исчезает.</p>
+
+  <h2>Проверка подлинности приложения (Apple App Attest)</h2>
+  <p>В iOS приложение доказывает нашему серверу, что оно — настоящая копия на настоящем
+  устройстве Apple. Один раз за установку оно создаёт ключ в защищённом хранилище устройства и
+  просит Apple его заверить. Заверение отправляется на наш сервер, проверяется там и
+  обменивается на подписанный токен, который приложение предъявляет в дальнейших запросах. Это
+  мешает получать бесплатные генерации в обход приложения. В заверении нет ни имени, ни
+  аккаунта, ни рекламного идентификатора; сам ключ устройство не покидает, и Apple не узнаёт,
+  что вы делаете в приложении. В Android ту же роль играет Google Play Integrity.</p>
 
   <h2>Реклама (Google AdMob)</h2>
   <p>Бесплатная генерация требует просмотра короткого ролика с вознаграждением. Рекламу
