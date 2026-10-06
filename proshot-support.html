@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — ProShot</title>
+<style>
+  :root{--ink:#0B0D14;--deep:#070910;--panel:#141826;--accent:#7AA2F7;
+        --dim:#2B3040;--paper:#E8E2D0;--muted:#8E90A8}
+  *{box-sizing:border-box}
+  body{margin:0;padding:0 20px 64px;background:var(--ink);color:var(--paper);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:760px;margin:0 auto}
+  header{padding:48px 0 24px;border-bottom:1px solid var(--dim);margin-bottom:32px}
+  .eyebrow{color:var(--accent);font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 12px}
+  h1{margin:0 0 8px;font-size:30px;line-height:1.2;font-weight:600}
+  .sub{color:var(--muted);margin:0;font-size:14px}
+  nav{margin:24px 0 0;display:flex;gap:8px;flex-wrap:wrap}
+  nav button{background:transparent;color:var(--muted);border:1px solid var(--dim);
+    border-radius:8px;padding:8px 16px;font-size:14px;cursor:pointer;font-family:inherit}
+  nav button[aria-selected="true"]{background:var(--panel);color:var(--accent);border-color:var(--accent)}
+  h2{font-size:19px;margin:36px 0 10px;color:var(--accent);font-weight:600}
+  ul{padding-left:20px} li{margin-bottom:8px}
+  a{color:var(--accent)}
+  code{background:var(--panel);padding:1px 6px;border-radius:5px;font-size:13.5px}
+  .box{background:var(--deep);border:1px solid var(--dim);border-radius:12px;padding:18px 20px;margin:24px 0}
+  .box p{margin:0;font-size:15px}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--dim);vertical-align:top}
+  th{color:var(--accent);font-weight:600;white-space:nowrap}
+  footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--dim);color:var(--muted);font-size:14px}
+  [hidden]{display:none !important}
+</style>
+</head>
+<body><div class="wrap">
+<header>
+  <p class="eyebrow">ProShot</p>
+  <h1><span data-en="Support" data-ru="Поддержка">Support</span></h1>
+  <p class="sub"><span data-en="Questions, problems, refunds"
+     data-ru="Вопросы, неполадки, возврат денег">Questions, problems, refunds</span></p>
+  <nav>
+    <button id="btn-en" aria-selected="true" onclick="pick('en')">English</button>
+    <button id="btn-ru" aria-selected="false" onclick="pick('ru')">Русский</button>
+  </nav>
+</header>
+<section id="lang-en">
+  <div class="box"><p><strong>Write to us at
+  <a href="mailto:o9753241@gmail.com">o9753241@gmail.com</a>.</strong> One person reads that
+  mailbox, usually within a day. Writing in English or Russian is equally fine.</p></div>
+
+  <p>ProShot makes professional headshots from photos you take inside the app. You pick a plan
+  and scenes, take three guided shots, and generate portraits scene by scene. Below are answers
+  to the questions people actually ask.</p>
+
+  <h2>The shutter stays grey</h2>
+  <p>The app checks every frame before the shot: one face, large enough, centred, level, well
+  lit and sharp. The hint at the bottom of the viewfinder says what to fix — move closer, turn
+  to the light, hold the phone still. When the frame turns green, the shutter becomes active.
+  If the camera is not available, you can pick a photo from your library instead.</p>
+
+  <h2>I left the app and my pack disappeared</h2>
+  <p>It did not. Unused photos stay in your pack on our server. Open the app: the home screen
+  shows the paid pack and how many photos are left, with a Continue button. After a restart
+  you only need to retake the three shots — taking them costs nothing.</p>
+
+  <h2>A generation failed</h2>
+  <p>If the image service does not answer, the photo is returned to your pack automatically,
+  so nothing is lost. Try again; if it repeats with the same scene, write to us and name the
+  scene and the approximate time.</p>
+
+  <h2>I bought a pack and the photos did not appear</h2>
+  <p>Reopen the app first. A purchase is completed only after our server has added the photos,
+  so an interrupted purchase is finished on the next launch by itself. If nothing changes,
+  write to us with the date and the plan. Never send card details — Apple handles payment, and
+  the receipt it issues is enough for us to find the purchase.</p>
+
+  <h2>Formats: avatar, CV, cover, story</h2>
+  <p>Any finished portrait can be laid out in four formats right on your phone — 1:1 avatar,
+  3:4 CV photo, 16:9 cover and 9:16 story — centred on your face. This does not use photos from
+  your pack.</p>
+
+  <h2>The portrait does not look like me</h2>
+  <p>The best results come from sharp, evenly lit shots with the face clearly visible and no
+  sunglasses. Height and weight are optional and mainly help body proportions in scenes where
+  more than the face is visible.</p>
+
+  <h2>What happens to my photo?</h2>
+  <p>It is sent over an encrypted connection, used only to create the portraits you ordered and
+  deleted from our server afterwards. It never trains anything and is never shown to anyone
+  else. Details are in the <a href="proshot.html">privacy policy</a>.</p>
+
+  <h2>How do I delete my data?</h2>
+  <p>There is nothing to delete by hand: the app has no accounts, and the server keeps only a
+  device identifier with your purchases and remaining photos. Uninstalling the app removes the
+  identifier from your phone.</p>
+
+  <h2>Refunds</h2>
+  <p>Purchases in the App Store are refunded by Apple, not by us — use
+  <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. If the reason is that
+  something in the app did not work, write to us as well, so the fault gets fixed.</p>
+
+  <h2>Reporting a problem</h2>
+  <p>The more precise, the faster it gets fixed: what you did, what you expected, what happened
+  instead, the scene name and the time. A screenshot helps.</p>
+</section>
+<section id="lang-ru" hidden>
+  <div class="box"><p><strong>Пишите на
+  <a href="mailto:o9753241@gmail.com">o9753241@gmail.com</a>.</strong> Почту читает один
+  человек, обычно в течение суток. По-русски и по-английски одинаково хорошо.</p></div>
+
+  <p>ProShot делает профессиональные портреты из снимков, сделанных прямо в приложении. Вы
+  выбираете тариф и сцены, делаете три кадра с подсказками и генерируете портреты по одной
+  сцене. Ниже — ответы на вопросы, которые задают на самом деле.</p>
+
+  <h2>Кнопка съёмки остаётся серой</h2>
+  <p>Приложение проверяет каждый кадр до снимка: лицо одно, достаточно крупное, по центру, не
+  наклонено, хорошо освещено и резкое. Подсказка внизу видоискателя говорит, что поправить —
+  подойти ближе, повернуться к свету, держать телефон неподвижно. Когда рамка становится
+  зелёной, кнопка съёмки активна. Если камера недоступна, можно взять фото из галереи.</p>
+
+  <h2>Вышел из приложения, и пакет пропал</h2>
+  <p>Не пропал. Неиспользованные фото остаются в пакете на нашем сервере. Откройте приложение:
+  на главном экране видно оплаченный пакет и сколько фото осталось, там же кнопка
+  «Продолжить». После перезапуска нужно только заново сделать три кадра — съёмка фото из
+  пакета не тратит.</p>
+
+  <h2>Генерация не прошла</h2>
+  <p>Если сервис изображений не ответил, фото автоматически возвращается в пакет, так что
+  ничего не теряется. Попробуйте ещё раз, а если повторяется на той же сцене — напишите нам,
+  укажите название сцены и примерное время.</p>
+
+  <h2>Купил пакет, а фото не появились</h2>
+  <p>Сначала откройте приложение заново. Покупка считается завершённой только после того, как
+  наш сервер начислил фото, поэтому прерванная покупка доводится до конца при следующем
+  запуске сама. Если ничего не изменилось — напишите нам дату и тариф. Данные карты не
+  присылайте никогда: оплату проводит Apple, и её квитанции нам достаточно, чтобы найти
+  покупку.</p>
+
+  <h2>Форматы: аватар, резюме, обложка, сторис</h2>
+  <p>Любой готовый портрет можно разложить на четыре формата прямо на телефоне — аватар 1:1,
+  фото для резюме 3:4, обложку 16:9 и сторис 9:16 — с центровкой по лицу. Фото из пакета на
+  это не тратятся.</p>
+
+  <h2>Портрет на меня не похож</h2>
+  <p>Лучший результат дают резкие, равномерно освещённые кадры, где лицо хорошо видно и нет
+  солнечных очков. Рост и вес необязательны и помогают в основном пропорциям в сценах, где
+  видно не только лицо.</p>
+
+  <h2>Что происходит с моим фото?</h2>
+  <p>Оно отправляется по защищённому соединению, используется только для заказанных
+  портретов и после этого удаляется с нашего сервера. Ни на чём не обучается и никому не
+  показывается. Подробности — в <a href="proshot.html">политике конфиденциальности</a>.</p>
+
+  <h2>Как удалить мои данные?</h2>
+  <p>Удалять вручную нечего: в приложении нет аккаунтов, а сервер хранит только идентификатор
+  устройства с покупками и остатком фото. При удалении приложения идентификатор с телефона
+  исчезает.</p>
+
+  <h2>Возврат денег</h2>
+  <p>Покупки в App Store возвращает Apple, а не мы — через
+  <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Если причина в том,
+  что в приложении что-то не сработало, напишите и нам, чтобы неполадку исправили.</p>
+
+  <h2>Сообщить о проблеме</h2>
+  <p>Чем точнее, тем быстрее починим: что делали, чего ждали, что получилось вместо этого,
+  название сцены и время. Снимок экрана помогает.</p>
+</section>
+<footer>
+  <p><span data-en="ProShot · ai.proshot.app · "
+     data-ru="ProShot · ai.proshot.app · ">ProShot · ai.proshot.app · </span><a
+     href="mailto:o9753241@gmail.com">o9753241@gmail.com</a></p>
+</footer>
+</div>
+<script>
+function pick(lang){
+  ['en','ru'].forEach(function(l){
+    document.getElementById('lang-'+l).hidden = (l !== lang);
+    document.getElementById('btn-'+l).setAttribute('aria-selected', l === lang);
+  });
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    el.textContent = el.getAttribute('data-'+lang);
+  });
+}
+// Всегда открываем на английском: политика — юридический документ, и одна
+// версия должна быть «основной». Русский доступен кнопкой вверху.
+</script>
+</body>
+</html>
